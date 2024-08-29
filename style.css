@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: black;
+}
+
+.welcome {
+    margin: auto;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.welcome h2,
+.game h2 {
+    font-size: 2.3rem;
+    font-weight: 500;
+    line-height: 40px;
+    color: #6b6b6b;
+}
+
+#btn,
+#btn1 {
+    margin-top: 1.5em;
+    border: none;
+    padding: 1em 2em;
+    font-size: 1rem;
+    font-weight: 500;
+    background-color: #008080;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#btn:hover,
+#btn1:hover {
+    background-color: #004d4d;
+    transform: scale(1.1);
+}
+
+.game {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2em;
+}
+
+.scores {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+    color: #6b6b6b;
+    font-size: 1.25rem;
+}
+
+.scores div {
+    margin: 0 0.5em;
+}
+
+.choices {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img {
+    margin: 1em;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.img img {
+    border-radius: 50%;
+}
+
+.img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.result {
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 20px;
+    color: #6b6b6b;
+}
+
+@media (max-width: 768px) {
+
+    .welcome,
+    .game {
+        width: 100%;
+        padding: 1em;
+    }
+
+    .welcome h2,
+    .game h2 {
+        font-size: 2rem;
+    }
+
+    #btn,
+    #btn1 {
+        padding: 0.8em 1.5em;
+        font-size: 0.9rem;
+    }
+
+    .scores {
+        flex-direction: column;
+        align-items: center;
+        font-size: 1rem;
+    }
+
+    .choices {
+        flex-direction: column;
+    }
+
+    .img img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .result {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .welcome,
+    .game {
+        width: 90%;
+        padding: 0.5em;
+    }
+
+    .welcome h2,
+    .game h2 {
+        font-size: 1.75rem;
+    }
+
+    #btn,
+    #btn1 {
+        padding: 0.6em 1em;
+        font-size: 0.8rem;
+    }
+
+    .scores {
+        flex-direction: column;
+        font-size: 0.9rem;
+    }
+
+    .img img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .result {
+        font-size: 0.9rem;
+    }
+}
